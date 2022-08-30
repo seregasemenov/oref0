@@ -9,7 +9,7 @@ found, schedule a reboot to fix them. Otherwise cancel a pending reboot.
 EOF
 
 # There are 2 known conditions in which communication between rig and pump is not working and a reboot is required.
-# 1) spidev5.1 already in use, see https://github.com/openaps/oref0/pull/411 (all pumps)
+# 1) spidev5.1 already in use, see https://github.com/seregasemenov/oref0/pull/411 (all pumps)
 # 2) continuous 'retry 0' or hanging reset.py, see https://github.com/oskarpearson/mmeowlink/issues/60 (WW-pump users only)
 # If one of those occur we will reboot the rig
 # If it will restore within 5 minutes, then the reboot will be cancelled
